@@ -13,6 +13,8 @@ int main(){
     int volume(0);
     cout<<" "<<endl;
     cout<<" "<<endl;
+    cout<<"If this doesn't work, -_- i'll try again.";
+    cout<<"please change";
     cout<<"------------------------------------ "<<endl;
 
     cout<<"FRANK'S SHIPPING CHARGE GENERATOR !"<<endl;
