@@ -3,7 +3,8 @@ using namespace std;
 
 int main(){
 
-    
+    int choice(0);
+
     double base_cost(2.50);
     int max_inches(10);
     int first_volume(100);
@@ -13,15 +14,77 @@ int main(){
     int volume(0);
     cout<<" "<<endl;
     cout<<" "<<endl;
-    cout<<"If this doesn't work, -_- i'll try again."<<endl;
-    cout<<"hello"<<endl;
-    cout<<"------------------------------------ "<<endl;
+    
+    cout<<"Choice [1]: Book a Carpet Cleaning Service"<<endl;
+    cout<<"Choice [2]: Genarate your Total Expense with Tax"<<endl;
+    cout<<"Choice [3]: Genarate to check how Change can be returned "<<endl;
+    cout<<"Choice [4]: Genarate yout Shipping Expenses "<<endl;
+    cout<<"Enter your choice of task: ";
+    cin>>choice;
 
+
+    if(choice ==1){
+        cout<<"------------------------------------ "<<endl;
+        cout<<"FRANK'S CARPET SERVICE BOOKING !"<<endl;
+        cout<<"------------------------------------"<<endl;
+        cout<<endl;
+
+        int width, height, length;
+        cout<<"Please enter the dimensions of your Carpet (in order width, height, length): "<<endl;
+        cout<<endl;
+
+        cin>>width;
+        cin>> height;
+        cin>>length;
+        
+
+        if(width>10 || height>10 || length>10){
+            cout<<endl;
+            cout<<"Booking Failed. Dimension exceeds limit."<<endl;
+            cout<<"Make sure all dimensions of your Carpet are within 10 meters."<<endl;
+            cout<<endl;
+        }else {
+            cout<<endl;
+            cout<<"Booking successfull."<<endl;
+            cout<<endl;
+            
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(choice==4){   
+
+    cout<<"------------------------------------ "<<endl;
     cout<<"FRANK'S SHIPPING CHARGE GENERATOR !"<<endl;
     cout<<"------------------------------------"<<endl;
+
+
     int height,length,width;
     cout<<"Enter in order length, height and width: "<<endl;
     cin>>length>>height>>width;
+
+
     if (length>max_inches||height>max_inches||width>max_inches){
         cout<<"Sorry! Package rejected - dimension exceeded. ";
         cout<<" "<<endl;
@@ -57,7 +120,7 @@ int main(){
 
 
 
-    }
+    }}
 
 
 
